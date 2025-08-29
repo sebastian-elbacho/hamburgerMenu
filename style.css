@@ -1,6 +1,21 @@
-* { 
+/* * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
+} */
+
+
+.hamburger {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+        & > .hamburger_contaier {
+            box-shadow: 0 0 2px 20x #51a7e8;
+        }
+    }
 }
