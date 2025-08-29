@@ -15,7 +15,7 @@
 
     &:focus {
         & > .hamburger_contaier {
-            box-shadow: 0 0 2px 20x #51a7e8;
+            box-shadow: 0 0 2px 20px #51a7e8;
         }
     }
 }
