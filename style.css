@@ -18,4 +18,23 @@
             box-shadow: 0 0 2px 20px #51a7e8;
         }
     }
+
+    &,
+    &__container {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 35px;
+        height: 30;
+    }
+
+    &__bars {
+        
+    }
 }
