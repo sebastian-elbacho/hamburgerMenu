@@ -19,6 +19,16 @@
 
 }
   
-.hamburger__container {
+.hamburger:focus > .hamburger__container {
     box-shadow: 0 0 2px 2px #51a7e8;
 }
+
+.hamburger:focus, 
+.hamburger__container:focus {
+    outline: none;
+}
+
+
+
+
+
