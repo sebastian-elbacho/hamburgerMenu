@@ -28,7 +28,50 @@
     outline: none;
 }
 
+.hamburger__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 35px;
+    height: 30px;
+}
 
+
+/* srodkowa kreska */
+.hamburger__bars {
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    transition: transform 220ms ease-in-out;
+}
+
+
+/* gorna i dolna kreska */
+.hamburger__bars::before, 
+.hamburger__bars::after {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    content: '';
+}
+
+
+/* pozycja gornaj kreski */
+.hamburger__bars::before {
+    top: -12px;
+    transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+
+
+/* pozycja dolnej kreski  */
+
+.hamburger__bars::after {
+    bottom: -12px;
+    transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
 
 
 
