@@ -74,10 +74,23 @@
 }
 
 
-/* === Stan atywny (zmina w "X" === */
-.hamburger--active .hamburger__bars { /* Gdy przycisk ma klasę --active */
-  transform: rotate(225deg); /* Obrót środkowej kreski */
+/* === Stan aktywny (zmina w "X" === */
+.hamburger--active .hamburger__bars {             /* Gdy przycisk ma klasę --active */
+  transform: rotate(225deg);                      /* Obrót środkowej kreski */
   transition: transform 220ms 120ms ease-in-out; /* Z lekkim opóźnieniem */
 }
 
+.hamburger--active .hamburger__bars::before {    /* gorna kreska podczas aktywacji */
+    top: 0;
+    transition: top 100ms ease-out;      /* szybkie wyrownanie */
+
+
+}
+
+
+.hamburger--active .hamburger__bars::after {
+   bottom: 0;
+   transform: rotate(-90deg);
+   transition: bottom 100ms ease-out, transform 220ms 120ms;
+}
 
