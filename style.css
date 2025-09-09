@@ -74,7 +74,7 @@
 }
 
 
-/* === Stan a ktywny (zmina w "X" === */
+/* === Stan atywny (zmina w "X" === */
 .hamburger--active .hamburger__bars { /* Gdy przycisk ma klasę --active */
   transform: rotate(225deg); /* Obrót środkowej kreski */
   transition: transform 220ms 120ms ease-in-out; /* Z lekkim opóźnieniem */
